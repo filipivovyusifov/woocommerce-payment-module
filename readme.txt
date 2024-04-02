@@ -51,6 +51,9 @@ With ePay Payment for WooCommerce, you are able to integrate the ePay payment wi
 
 == Changelog ==
 
+= 6.0.3 =
+* Support for WooCommerce Blocks
+
 = 6.0.0 =
 * Support for WooCommerce HPOS (High Performance Order Storage) and WooCommerce 8.2.
 * Before upgrading to HPOS, please make sure to make a database backup. HPOS stores the orders in new database tables. Recommending compatibility mode to start with.

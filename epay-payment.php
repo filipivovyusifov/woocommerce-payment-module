@@ -14,8 +14,8 @@
 
 use Automattic\WooCommerce\Utilities\FeaturesUtil;
 
-define( 'BOCLASSIC_PATH', dirname( __FILE__ ) );
-define( 'BOCLASSIC_VERSION', '6.0.2' );
+define( 'EPAYCLASSIC_PATH', dirname( __FILE__ ) );
+define( 'EPAYCLASSIC_VERSION', '6.0.3' );
 
 add_action( 'plugins_loaded', 'init_epay_payment', 0 );
 
@@ -29,9 +29,9 @@ function init_epay_payment() {
 		return;
 	}
 
-	include( BOCLASSIC_PATH . '/lib/epay-payment-soap.php' );
-	include( BOCLASSIC_PATH . '/lib/epay-payment-helper.php' );
-	include( BOCLASSIC_PATH . '/lib/epay-payment-log.php' );
+	include( EPAYCLASSIC_PATH . '/lib/epay-payment-soap.php' );
+	include( EPAYCLASSIC_PATH . '/lib/epay-payment-helper.php' );
+	include( EPAYCLASSIC_PATH . '/lib/epay-payment-log.php' );
 
 	/**
 	 * Gateway class
@@ -398,7 +398,7 @@ function init_epay_payment() {
 		 * Admin Panel Options
 		 */
 		public function admin_options() {
-			$version = BOCLASSIC_VERSION;
+			$version = EPAYCLASSIC_VERSION;
 
 			$html = "<h3>ePay Payment Solutions v{$version}</h3>";
 			$html .= Epay_Payment_Helper::create_admin_debug_section();
