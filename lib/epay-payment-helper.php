@@ -35,7 +35,7 @@ class Epay_Payment_Helper {
 	public static function get_module_header_info() {
 		global $woocommerce;
 
-		$epay_version        = BOCLASSIC_VERSION;
+		$epay_version        = EPAYCLASSIC_VERSION;
 		$woocommerce_version = $woocommerce->version;
 		$php_version         = phpversion();
 		$result              = "WooCommerce/{$woocommerce_version} Module/{$epay_version} PHP/{$php_version}";
